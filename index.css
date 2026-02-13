@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Allura&family=Anton&family=Archivo+Black&family=Dancing+Script:wght@400..700&family=Lavishly+Yours&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #ffe6e6;
+
+    position: relative;
+}
+
+.img-container {
+    width: 100%;
+    height: 100vh;
+
+    background-image: url(images/valentines.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.blur {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(248, 248, 248, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.content {
+    position: absolute;
+    
+    width: 100%;
+    height: 100vh;
+
+    background-color: #ffe6e679;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 10px;
+}
+
+.text-container {
+    grid-column: 2 / span 3;
+    grid-row: 2 / span 5;
+
+    display: block;
+    align-items: center;
+
+    padding: 25px;
+
+    font-size: 0.75rem;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+
+    background-color: #f9f9f9;
+
+    border: 1px solid #FF0669;
+    border-radius: 25px 25px 0px 0px;
+
+    cursor: default;
+}
+
+.email-btn {
+    grid-column: 2 / span 3;
+    grid-row: 7 / span 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #f9f9f9;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+
+    border: 1px solid #FF0669;
+    border-radius: 0px 0px 0px 25px;
+}
+
+.email-btn a{
+    text-decoration: none;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.5em;
+}
