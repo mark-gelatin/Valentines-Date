@@ -56,7 +56,7 @@
 
     padding: 25px;
 
-    font-size: 0.75rem;
+    font-size: 0.4rem;
     font-family: 'Poppins', sans-serif;
     color: #333;
 
@@ -82,7 +82,7 @@
     padding: 10px 20px;
 
     border: 1px solid #FF0669;
-    border-radius: 0px 0px 0px 25px;
+    border-radius: 0px 0px 25px 25px;
 }
 
 .email-btn a{
@@ -90,5 +90,30 @@
     color: #333;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    font-size: 1.5em;
+    font-size: 1em;
+}
+
+@media (max-width: 768px) {
+    .content {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+
+        padding: 20px 20px;
+    }
+
+    .text-container {
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 5;
+
+        font-size: 1rem;
+
+        overflow: scroll;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .email-btn {
+        grid-column: 1 / span 1;
+        grid-row: 7 / span 1;
+    }
 }
